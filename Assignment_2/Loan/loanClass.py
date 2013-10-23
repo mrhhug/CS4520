@@ -29,6 +29,4 @@ class Loanclass(object):
         return self.remainingBalance(month)+self.interestAccrued(month)-self.computeMonthlyPayment()
 
     def __str__(self):
-            return str(self.numMonths) + " " + str(self.Balance) + " " + str(self.APR) + " " + str(self.monthlyPayment)
-            
-            
+            return str(self.numMonths) + " " + str(self.Balance) + " " + str(self.APR) + " " + str(self.monthlyPayment)  
