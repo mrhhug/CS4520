@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>
+			CS 4520&mdash;Fall 2013 - Assignment 5 submitted by Michael Hug &trade;
+		</title>
+		<!-- this will break eventually start-->
+		<link rel="stylesheet" type="text/css" href="http://science.kennesaw.edu/~bsetzer/4520fa13/nanoc/output/assignments/supplement/style1-assignment05.css" media="screen">
+		<!-- this will break eventually end-->
+	</head>
+	<body>
+		<h1 id="assignment-5">Assignment 5</h1>
+		<p>This assignment is a web version of 
+		<a href="http://science.kennesaw.edu/~bsetzer/4520fa13/nanoc/output/assignments/2/">Assignment #2</a>.
+		Create a web page with a form that will let the user enter parameters for a loan:
+		annual interest rate as a percentage;
+		number of months in the term of the loan;
+		amount of the loan.
+		Create a Python script that will, when the user submits the form, creat a web page with 
+		an amortization table for the loan with a layout similar to that in
+		<a href="http://science.kennesaw.edu/~bsetzer/4520fa13/nanoc/output/assignments/2/">Assignment #2</a>.
+		The response page should also display the parameters entered by the user.</p>
+
+		<p>Use the stylesheet <a href="http://science.kennesaw.edu/~bsetzer/4520fa13/nanoc/output/assignments/supplement/style1-assignment05.css">style1-assignment05.css</a> to style
+		both the user entry page and the response page.</p>
+
+		<p>Your submission should consist of two files: an HTML page and a Python script.
+		These will be run in a web server running under Linux Mint.
+		The stylesheet will be accessible as 
+		<code>/style1-assignment05.css</code>
+		and the script will be accessible as
+		<code>/cgi-bin/name-of-script.py</code>.
+		You may name the files any reasonable names, the user entry form should, of course, reference the
+		actual name you give the script. </p>
+
+		<h2 id="due-on-october-30-2013">Due on October 30, 2013</h2>
+		<hr><br>
+		<form name="input" action="/cgi-bin/loan.py" method="get">
+			<table width=100%>
+				<tr>
+					<td>annual interest rate as a percentage :</td>
+					<td><input type="text" name="AIR"></td>
+				</tr>
+				<tr>
+					<td>number of months in the term of the loan :</td>
+					<td><input type="text" name="month"></td>
+				</tr>
+				<tr>
+					<td>amount of the loan :</td>
+					<td><input type="text" name="amount"></td>
+				</tr>
+				<tr>
+				</tr>
+			</table>
+			<h3 align="center">if you enter more than about 17 in the months, this recursive algorithm will take some time</h3>
+			<input type="submit" value="Submit" style="width:100%;height:80px">
+		</form>
+	</body>
+</html>
