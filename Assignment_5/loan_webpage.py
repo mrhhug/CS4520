@@ -32,11 +32,34 @@ class Loan(object):
     def __str__(self): # your output may be another's input
             return str(self.Balance) + " " + str(self.APR) + " " + str(self.numMonths) + " " + str(self.monthlyPayment)
 
+def htmlbegin():
+	print "Content-Type: text/html;charset=utf-8"
+	print
+	print '''
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<title>
+				CS 4520&mdash;Fall 2013 - Assignment 5 submitted by Michael Hug &trade;
+			</title>
+			<!-- this will break eventually start-->
+			<link rel="stylesheet" type="text/css" href="http://science.kennesaw.edu/~bsetzer/4520fa13/nanoc/output/assignments/supplement/style1-assignment05.css" media="screen">
+			<!-- this will break eventually end-->
+		</head>
+		<body>
+			<pre align="center">
+	'''
+
+def htmlend():
+	print '''
+	</body>
+	</html>
+	'''
 #take input from form in webpage
 fld=cgi.FieldStorage()
 AIR=float(fld.getfirst("AIR"))
 month=int(fld.getfirst("month"))
-amount=int(fld.getfirst("amount"))
+amount=float(fld.getfirst("amount"))
 
 #call the Loan class with form data, we already did an assignment on user input checking - this assignment omits user input checking
 loan=Loan(amount,AIR,month,0)
@@ -46,35 +69,19 @@ loan.computeMonthlyPayment()
 head = "{:11s}{:18s}{:17s}{:12s}{}"
 body = "{:5d}{:16.2f}{:16.2f}{:16.2f}{:16.2f}"
 
-#begin html
-print "Content-Type: text/html;charset=utf-8"
-print
-print '''
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>
-			CS 4520&mdash;Fall 2013 - Assignment 5 submitted by Michael Hug &trade;
-		</title>
-		<!-- this will break eventually start-->
-		<link rel="stylesheet" type="text/css" href="http://science.kennesaw.edu/~bsetzer/4520fa13/nanoc/output/assignments/supplement/style1-assignment05.css" media="screen">
-		<!-- this will break eventually end-->
-	</head>
-	<body>
-		<pre align="center">
-'''
+#html begining
+htmlbegin()
 
-#pause html for some python
+#python meat of page
 print head.format("Month","Balance In","Interest","Payment","Balance Out")
-print "<hr>"
 for i in range(1, loan.numMonths+1):
 	ii=i+1
 	formatted = body.format(i,loan.remainingBalance(i),loan.interestAccrued(i),loan.monthlyPayment,loan.remainingBalance(ii))
 	print formatted
+print "<pre>"
+print "<hr>"
+print "parameters entered by the user "
+print "annual interest rate as a percentage=<b>%g</b>; number of months in the term of the loan=<b>%g</b>; amount of the loan=<b>%g</b>;" %(AIR,month,amount)
 
-#resume html
-print '''
-		</pre>
-	</body>
-</html>
-'''
+#html ending
+htmlend()
