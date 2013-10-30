@@ -1,1 +1,2 @@
-wget -r -np --level=inf -N http://science.kennesaw.edu/~bsetzer/4520fa13/
+wget -r -np --level=inf -N http://science.kennesaw.edu/~bsetzer/4520fa13/nanoc/
+wget -r -np --level=inf -N http://science.kennesaw.edu/~bsetzer/4520fa13/extra/
