@@ -1,7 +1,7 @@
 set term png size 1280,420
-set output "ex10_FCFS.png"
+set output "ex13_SRT.png"
 unset key
-set title "Michael Hug Assignment 4 ex10_FCFS\nP1=135 ; P2=102 ; P3=56 ; P4=148 ; P5=125; P6=65\n"
+set title "Michael Hug Assignment 4 ex13_SRT\nP1=135 ; P2=102 ; P3=56 ; P4=148 ; P5=125; P6=65\n"
 
 #xtics - job changes
 set xrange [0:641]
