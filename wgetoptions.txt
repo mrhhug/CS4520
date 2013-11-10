@@ -1,1 +1,6 @@
+<<<<<<< HEAD
 wget -r -np --level=inf -N http://science.kennesaw.edu/~bsetzer/3530fa13/
+=======
+wget -r -np --level=inf -N http://science.kennesaw.edu/~bsetzer/4520fa13/nanoc/
+wget -r -np --level=inf -N http://science.kennesaw.edu/~bsetzer/4520fa13/extra/
+>>>>>>> 711bcd6008ebc5ef0b46c459aca8430c960b6faa

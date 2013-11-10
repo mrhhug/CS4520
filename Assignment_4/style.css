@@ -1,0 +1,170 @@
+/* @item[:title]*/
+/* COlourLovers  Terra? palette */
+/**/
+/* http://colorschemedesigner.com/
+   based on complements of #FF9900 
+* /
+$text: #583500;
+$headerText: #82befb;
+$textBackground: #fff1dc;
+$pageBackground: #0d58a6;
+$garish: #ff9900;  /* indian red * /
+$altText: #006e4a;
+$lightBackground: #eef;
+$todoBackground: $text;
+$todoColor: $textBackground;
+$ghostBackground: lighten($textBackground,30%);
+$ghostColor: lighten($text, 30%);
+/**/
+/* ColorLovers natural palette * /
+$text: #414960;
+$headerText: #af9257;
+$textBackground: #eee2ae;
+$pageBackground: #5b7361;
+$garish: #cd5c5c;  /* indian red * /
+$todoBackground: $text;
+$todoColor: $textBackground;
+/**/
+/* ColorLovers earth's warmth */
+html {
+  background-color: #b06142;
+  font-family: "Tahoma", sans-serif;
+  background-image: url("EarthsWarmthMosaic8.png"); }
+
+table.grid, table.grid th, table.grid td {
+  border-style: solid;
+  border-collapse: collapse;
+  border-width: 3px;
+  padding: 5px;
+  /*text-align: right;*/ }
+
+#sidebar {
+  position: fixed;
+  top: 40px;
+  left: 20px;
+  width: 200px;
+  padding: 20px 20px 20px 5px;
+  /* t r b l */
+  text-align: right;
+  background-color: #fff4ab;
+  color: #592e2e;
+  border-style: solid;
+  border-width: 5px; }
+
+#main, #content {
+  position: absolute;
+  top: 40px;
+  left: 280px;
+  /*width: 500px;*/
+  width: 60%;
+  background-color: #fff4ab;
+  color: #592e2e;
+  padding: 20px 5px 20px 20px;
+  /* t r b l */
+  border-style: solid;
+  border-width: 5px; }
+
+.note {
+  color: #b06142; }
+
+h1, h2, h3, h4, h5 {
+  color: #853534; }
+
+dt {
+  color: #b06142;
+  font-size: x-large;
+  margin-top: 1em; }
+
+/* outline line style lists */
+ol.outline > li {
+  list-style-type: upper-roman; }
+
+ol.outline > li > ol > li {
+  list-style-type: upper-alpha; }
+
+ol.outline > li > ol > li > ol > li {
+  list-style-type: decimal; }
+
+ol.outline > li > ol > li > ol > li > ol > li {
+  list-style-type: lower-alpha; }
+
+ol.outline > li > ol > li > ol > li > ol > li > ol > li {
+  list-style-type: lower-roman; }
+
+ol.outline > li > ol > li > ol > li > ol > li > ol > li > ol > li {
+  list-style-type: lower-greek; }
+
+ol.question > li {
+  list-style-type: decimal; }
+
+ol.question > li > ol > li {
+  list-style-type: lower-alpha; }
+
+ul.spaced > li {
+  margin-top: 1em; }
+
+#officehours {
+  border: solid;
+  width: 75%; }
+
+#officehours * {
+  border-bottom: solid;
+  padding: 5px; }
+
+#officehours .last {
+  border-bottom: none; }
+
+.explanation {
+  font-size: small;
+  color: #853534;
+  font-style: normal; }
+
+.major-section {
+  border-top-style: double;
+  padding-top: 1em;
+  margin-top: 2em; }
+
+.note {
+  color: red;
+  background-color: #bbb; }
+
+.lab-section {
+  background-color: white; }
+
+.ghost {
+  color: #dc8;
+  /*#F5EBAc;*/
+  color: #b36d6d;
+  background-color: white; }
+
+.todo, #todo-list {
+  background-color: #592e2e;
+  color: #fff4ab; }
+
+.todo-done {
+  visibility: hidden;
+  position: absolute; }
+
+.doc-image {
+  float: right;
+  clear: right;
+  width: 50%; }
+
+.doc-image40 {
+  float: right;
+  clear: right;
+  width: 40%; }
+
+.notes h3 {
+  color: #b06142;
+  font-size: x-large;
+  margin-top: 1em;
+  border-top-style: dotted; }
+
+.hint:before {
+  color: black;
+  content: "Hint->"; }
+
+.hint {
+  background-color: white;
+  color: white; }
