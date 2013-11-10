@@ -1,7 +1,7 @@
 set term png size 1280,420
 set output "ex8_RR.png"
 unset key
-set title "Michael Hug Assignment 4 ex8_RR\nP1=135 ; P2=102 ; P3=56 ; P4=148 ; P5=125;\n297 : P2 end; P3 resume"
+set title "Michael Hug Assignment 4 ex8_RR\nP1=135 ; P2=102 ; P3=56 ; P4=148 ; P5=125;\n\n297 : P2 end; P3 resume"
 
 #xtics - job changes
 set xrange [0:576]
