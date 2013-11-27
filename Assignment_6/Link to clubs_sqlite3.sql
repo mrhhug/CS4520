@@ -1,1 +1,0 @@
-/srv/http/cgi-bin/a06/clubs_sqlite3.sql
