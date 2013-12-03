@@ -1,5 +1,5 @@
 """
-Django settings for measurements project.
+Django settings for Assignment_7 project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.6/topics/settings/
@@ -17,7 +17,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'k5(d8wgtfrnn#qlku&d9us2zb3_f!v^p1nvp^j+@a&=y1kr_d)'
+SECRET_KEY = 'n__tw=jc0+4v2=dz=h)s9e8wx)0d%168hiqj_5!pm(847l)f0='
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -47,9 +47,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'measurements.urls'
+ROOT_URLCONF = 'Assignment_7.urls'
 
-WSGI_APPLICATION = 'measurements.wsgi.application'
+WSGI_APPLICATION = 'Assignment_7.wsgi.application'
 
 
 # Database
@@ -65,6 +65,7 @@ DATABASES = {
         'PORT': '3306',
     }
 }
+
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
 
