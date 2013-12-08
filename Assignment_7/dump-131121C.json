@@ -1,0 +1,211 @@
+[
+{
+    "pk": 1, 
+    "model": "measurements.location", 
+    "fields": {
+        "altitude": 2000, 
+        "name": "Mt. Rainier"
+    }
+},
+{
+    "pk": 2, 
+    "model": "measurements.location", 
+    "fields": {
+        "altitude": 1500, 
+        "name": "Mt. Hood"
+    }
+},
+{
+    "pk": 3, 
+    "model": "measurements.location", 
+    "fields": {
+        "altitude": 800, 
+        "name": "Kennesaw"
+    }
+},
+{
+    "pk": 4, 
+    "model": "measurements.location", 
+    "fields": {
+        "altitude": 20, 
+        "name": "Boca Raton"
+    }
+},
+{
+    "pk": 5, 
+    "model": "measurements.location", 
+    "fields": {
+        "altitude": 1200, 
+        "name": "Grand Canyon"
+    }
+},
+{
+    "pk": 1, 
+    "model": "measurements.measurement", 
+    "fields": {
+        "date": "2011-11-18T14:30:00Z", 
+        "location": 1, 
+        "value": 23.5
+    }
+},
+{
+    "pk": 2, 
+    "model": "measurements.measurement", 
+    "fields": {
+        "date": "2010-11-18T14:45:00Z", 
+        "location": 1, 
+        "value": 14.9
+    }
+},
+{
+    "pk": 3, 
+    "model": "measurements.measurement", 
+    "fields": {
+        "date": "2012-11-18T14:37:00Z", 
+        "location": 1, 
+        "value": 18.5
+    }
+},
+{
+    "pk": 4, 
+    "model": "measurements.measurement", 
+    "fields": {
+        "date": "2011-11-17T19:15:00Z", 
+        "location": 2, 
+        "value": 5.6
+    }
+},
+{
+    "pk": 5, 
+    "model": "measurements.measurement", 
+    "fields": {
+        "date": "2010-11-17T19:30:00Z", 
+        "location": 2, 
+        "value": 7.8
+    }
+},
+{
+    "pk": 6, 
+    "model": "measurements.measurement", 
+    "fields": {
+        "date": "2012-11-17T19:45:00Z", 
+        "location": 2, 
+        "value": 6.3
+    }
+},
+{
+    "pk": 7, 
+    "model": "measurements.measurement", 
+    "fields": {
+        "date": "2011-11-16T15:47:00Z", 
+        "location": 3, 
+        "value": 1.5
+    }
+},
+{
+    "pk": 8, 
+    "model": "measurements.measurement", 
+    "fields": {
+        "date": "2010-11-16T15:35:00Z", 
+        "location": 3, 
+        "value": 3.9
+    }
+},
+{
+    "pk": 9, 
+    "model": "measurements.measurement", 
+    "fields": {
+        "date": "2012-11-17T15:29:00Z", 
+        "location": 3, 
+        "value": 2.5
+    }
+},
+{
+    "pk": 10, 
+    "model": "measurements.measurement", 
+    "fields": {
+        "date": "2011-11-16T16:05:00Z", 
+        "location": 4, 
+        "value": 18.5
+    }
+},
+{
+    "pk": 11, 
+    "model": "measurements.measurement", 
+    "fields": {
+        "date": "2010-11-16T15:55:00Z", 
+        "location": 4, 
+        "value": 20.3
+    }
+},
+{
+    "pk": 12, 
+    "model": "measurements.measurement", 
+    "fields": {
+        "date": "2012-11-16T16:18:00Z", 
+        "location": 4, 
+        "value": 10.1
+    }
+},
+{
+    "pk": 13, 
+    "model": "measurements.measurement", 
+    "fields": {
+        "date": "2011-11-17T17:23:00Z", 
+        "location": 5, 
+        "value": 0.5
+    }
+},
+{
+    "pk": 14, 
+    "model": "measurements.measurement", 
+    "fields": {
+        "date": "2010-11-17T17:15:00Z", 
+        "location": 5, 
+        "value": 0.2
+    }
+},
+{
+    "pk": 15, 
+    "model": "measurements.measurement", 
+    "fields": {
+        "date": "2012-11-17T17:17:00Z", 
+        "location": 5, 
+        "value": 0.6
+    }
+},
+{
+    "pk": 1, 
+    "model": "measurements.group", 
+    "fields": {
+        "name": "Volcanoes", 
+        "members": [
+            1, 
+            2
+        ]
+    }
+},
+{
+    "pk": 2, 
+    "model": "measurements.group", 
+    "fields": {
+        "name": "West", 
+        "members": [
+            1, 
+            2, 
+            5
+        ]
+    }
+},
+{
+    "pk": 3, 
+    "model": "measurements.group", 
+    "fields": {
+        "name": "East", 
+        "members": [
+            3, 
+            4
+        ]
+    }
+}
+]
